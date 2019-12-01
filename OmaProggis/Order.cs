@@ -8,17 +8,15 @@ namespace Inheritance
 {
     class Order : Document
     {
-        private string _purchaser;
+        public string _purchaser { get; set; }
+
 
         public Order(string purchaser, string orderNumber, string supplier, double total) : base(orderNumber, supplier, total)
         {
             _purchaser = purchaser;
         }
 
-        public string GetPurchaser()
-        {
-            return _purchaser;
-        }
+
 
 
 

@@ -13,11 +13,16 @@ namespace Inheritance
         //To set inspector etc data comparing we need here also some variables for ordernumber and supplier
         private string _orderNumberSetting;
         private string _supplierSetting;
+        public DateTime _duedate { get; set; }
+        public string _adder { get; set; }
 
-        public Invoice(string orderNumber, string supplier, double total) : base(orderNumber, supplier, total)
+        public Invoice(string orderNumber, string supplier, double total, DateTime duedate, string adder) : base(orderNumber, supplier, total)
         {
-
+            _duedate = duedate;
+            _adder = adder;
         }
+
+
 
         public string GetInspector()
         {
@@ -40,7 +45,7 @@ namespace Inheritance
             {
                 if (item.GetOrderNumber() == _orderNumberSetting && item.GetSupplier() == _supplierSetting)
                 {
-                    _inspector = item.GetPurchaser();
+                    _inspector = item._purchaser;
                     Console.WriteLine($"The inspector for this invoice is set {_inspector}");
                 }
 

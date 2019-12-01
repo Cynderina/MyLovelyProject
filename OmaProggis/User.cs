@@ -10,6 +10,9 @@ namespace Inheritance
     class User
     {
 
+        internal List<Invoice> overdues = new List<Invoice>();
+        internal static int _amountOfOrverdues;
+
         public void GetBasicMenu()
         {
             Console.WriteLine("\n\nChoose from the following:\n\n");
@@ -39,7 +42,6 @@ namespace Inheritance
                         while (reader.Read())
                         // Let's get the string value in the field 1
                         {
-
                             if (name == reader.GetString(1))
                             {
                                 return reader.GetString(2);
@@ -102,7 +104,5 @@ namespace Inheritance
                 }
             }
         }
-
-        
     }
 }
