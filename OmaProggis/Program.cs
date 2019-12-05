@@ -178,6 +178,12 @@ namespace Inheritance
             role = "Null";
             Console.WriteLine("Give name");
             name = Console.ReadLine();
+            if (oneUser.WorkerRole(name) == "") // käyttäjää ei löytynyt
+            {
+                Console.WriteLine("User not found.");
+                Console.WriteLine("Tähän jotain hienoja lisäohjeita käyttäjälle");
+                
+            }
             Console.WriteLine(oneUser.WorkerRole(name));
             role = oneUser.WorkerRole(name);
 
