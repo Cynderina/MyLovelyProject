@@ -1,4 +1,6 @@
-﻿Tietokannassa on kolme etukäteen tehtyä käyttäjäprofiilia testausta varten, joita suositellaan käytettäväksi testaukseen
+SQL database https://github.com/Cynderina/MyLovelyProjectDB/blob/master/MyLovelyProjectDB.sql
+
+Tietokannassa on kolme etukäteen tehtyä käyttäjäprofiilia testausta varten, joita suositellaan käytettäväksi testaukseen
 Tunnusten nimet (joita ohjelma alussa kysyy), ovat:
 Admin
 Purchaser
