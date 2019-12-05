@@ -48,13 +48,13 @@ namespace Inheritance
                             }
                         }
 
-                    return "User not found";
+                    return "";
 
                 }
             }
             catch
             {
-                return "User nor found";
+                return "";
             }
         }
 
